@@ -18,9 +18,13 @@ return require('packer').startup(function(use)
   --Themes
   use "folke/tokyonight.nvim"
 
-
   vim.cmd[[ set background=dark ]]
   vim.cmd[[ colorscheme tokyonight ]]
+  
+  -- nvim tree for sidebar & telescope
+  use "nvim-tree/nvim-tree.lua"
+  use "nvim-tree/nvim-web-devicons"
+  use "nvim-treesitter/nvim-treesitter"
 
   -- End if plugins section
 
